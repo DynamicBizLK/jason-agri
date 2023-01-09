@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: "Heebo", sans-serif;
+  scroll-behavior: smooth !important;
+}
+
+/* For Webkit-based browsers (Chrome, Safari and Opera) */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* For IE, Edge and Firefox */
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.product-list {
+  div:nth-child(odd) {
+    @apply flex-row-reverse border-r-0 sm:flex-col sm:border-r;
+  }
+
+  div:nth-child(even) {
+    @apply border-l-0 sm:border-l;
+  }
+}
