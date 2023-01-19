@@ -7,42 +7,43 @@ const About = () => {
   const scrollRef = useRef(null);
 
   return (
-    <>
-      <section ref={scrollRef} id="about-us" className="container max-w-6xl my-14 scroll-m-32 overflow-hidden">
-        <div className="flex gap-8 md:flex-col">
-          <motion.div
-            whileInView={{ x: "0" }}
-            initial={{ x: "-100%" }}
-            transition={{
-              duration: 0.5,
-            }}
-            viewport={{ once: true }}
-            className="max-w-sm md:max-w-full"
-          >
-            <h3 className="text-green-700 font-semibold text-3xl">About Us</h3>
-            <p className="mt-4 text-lg text-justify">
-              Jason Agri Exports (PVT) Limited is more than a one-stop solution provider. We offer wide range of services to our customers and manufactures to meet their needs along the agri supply
-              chain including production of Vegetables, Fruits, Herbs, Spices and similar items. Our agri chain management services sourcing of raw materials, sample creation, product design and
-              development, production management, merchandising, quality control, logistics management, social compliance, manufacturing and third party manufactures services.
-            </p>
+    <section ref={scrollRef} id="about-us" className="container max-w-6xl my-14 scroll-m-32 overflow-hidden">
+      <div className="flex gap-8 md:flex-col">
+        <motion.div
+          whileInView={{ x: "0" }}
+          initial={{ x: "-100%" }}
+          transition={{
+            duration: 0.5,
+          }}
+          viewport={{ once: true }}
+          className="max-w-sm md:max-w-full"
+        >
+          <h3 className="text-jasonred font-semibold text-3xl">About Us</h3>
+          <p className="mt-4 text-lg">
+            Jason Agri Exports (Pvt) Limited is a company offering services to our customers and manufactures to meet their needs in agri supply chain.
+            <br />
+            It includes cultivation of vegetables, fruits, herbs, spices and similar items and dehydration of fresh products according to accepted food & hygenic standards.
+            <br />
+            Jason Agri Exports provides services for sourcing of raw materials, storage, sample creation, management of dehydration process quality control, ethical & social compliances. logistics and
+            management of the export process until the product reaches the end customer.
+          </p>
 
-            <Link href="/about-us">
-              <button className="bg-green-700 font-medium py-3 px-5 rounded-md mt-4 text-white">Learn More</button>
-            </Link>
-          </motion.div>
-          <motion.div
-            whileInView={{ x: "0" }}
-            initial={{ x: "100%" }}
-            transition={{
-              duration: 0.5,
-            }}
-            viewport={{ once: true }}
-          >
-            <Image src="/img-grid.png" height="1500" width="1500" alt="" />
-          </motion.div>
-        </div>
-      </section>
-    </>
+          <Link href="/about-us">
+            <button className="bg-jasonred font-medium py-3 px-5 rounded-md mt-4 text-white">Learn More</button>
+          </Link>
+        </motion.div>
+        <motion.div
+          whileInView={{ x: "0" }}
+          initial={{ x: "100%" }}
+          transition={{
+            duration: 0.5,
+          }}
+          viewport={{ once: true }}
+        >
+          <Image src="/img-grid.png" height="1500" width="1500" alt="" />
+        </motion.div>
+      </div>
+    </section>
   );
 };
 

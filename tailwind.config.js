@@ -6,7 +6,9 @@ module.exports = {
       center: true,
     },
     extend: {
-      colors: {},
+      colors: {
+        jasonred: "#ED1C24",
+      },
     },
     screens: {
       "2xl": { max: "1535px" },

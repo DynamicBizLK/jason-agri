@@ -22,7 +22,7 @@ const ProductsPage = ({ products }) => {
         </section>
 
         <section className="product-list container max-w-6xl my-16 space-y-8">
-          <h3 className="text-4xl font-semibold text-green-700">Fresh Fruits</h3>
+          <h3 className="text-4xl font-semibold text-jasonred">Fresh Fruits</h3>
 
           {products?.map(({ title, _id, category, mainImage, description }, index) => {
             const imageSrc = imgBuilder.image(mainImage).url();
@@ -38,7 +38,7 @@ const ProductsPage = ({ products }) => {
                     <h3 className="text-3xl font-semibold">{title}</h3>
                     <p className="mb-4 mt-2 h-60 overflow-y-auto scrollbar-hide sm:h-fit">{description}</p>
 
-                    <p className="border border-green-700 text-green-700 py-2 px-3 w-fit mt-2">{category.title}</p>
+                    <p className="border border-green-700 text-jasonred py-2 px-3 w-fit mt-2">{category.title}</p>
                   </div>
                 </div>
               )
@@ -47,7 +47,7 @@ const ProductsPage = ({ products }) => {
         </section>
 
         <section className="product-list container max-w-6xl my-16 space-y-8">
-          <h3 className="text-4xl font-semibold text-green-700">Fresh Vegetables</h3>
+          <h3 className="text-4xl font-semibold text-jasonred">Fresh Vegetables</h3>
 
           {products?.map(({ title, _id, category, mainImage, description }, index) => {
             const imageSrc = imgBuilder.image(mainImage).url();
@@ -63,7 +63,7 @@ const ProductsPage = ({ products }) => {
                     <h3 className="text-3xl font-semibold">{title}</h3>
                     <p className="mb-4 mt-2 h-60 overflow-y-auto scrollbar-hide sm:h-fit">{description}</p>
 
-                    <p className="border border-green-700 text-green-700 py-2 px-3 w-fit mt-2">{category.title}</p>
+                    <p className="border border-green-700 text-jasonred py-2 px-3 w-fit mt-2">{category.title}</p>
                   </div>
                 </div>
               )
@@ -72,7 +72,7 @@ const ProductsPage = ({ products }) => {
         </section>
 
         <section className="product-list container max-w-6xl my-16 space-y-8">
-          <h3 className="text-4xl font-semibold text-green-700">Dehydrated Fruits</h3>
+          <h3 className="text-4xl font-semibold text-jasonred">Dehydrated Fruits</h3>
 
           {products?.map(({ title, _id, category, mainImage, description }, index) => {
             const imageSrc = imgBuilder.image(mainImage).url();
@@ -88,7 +88,7 @@ const ProductsPage = ({ products }) => {
                     <h3 className="text-3xl font-semibold">{title}</h3>
                     <p className="mb-4 mt-2 h-60 overflow-y-auto scrollbar-hide sm:h-fit">{description}</p>
 
-                    <p className="border border-green-700 text-green-700 py-2 px-3 w-fit mt-2">{category.title}</p>
+                    <p className="border border-green-700 text-jasonred py-2 px-3 w-fit mt-2">{category.title}</p>
                   </div>
                 </div>
               )
@@ -97,7 +97,7 @@ const ProductsPage = ({ products }) => {
         </section>
 
         <section className="product-list container max-w-6xl my-16 space-y-8">
-          <h3 className="text-4xl font-semibold text-green-700">Dehydrated Vegetables</h3>
+          <h3 className="text-4xl font-semibold text-jasonred">Dehydrated Vegetables</h3>
 
           {products?.map(({ title, _id, category, mainImage, description }, index) => {
             const imageSrc = imgBuilder.image(mainImage).url();
@@ -113,7 +113,7 @@ const ProductsPage = ({ products }) => {
                     <h3 className="text-3xl font-semibold">{title}</h3>
                     <p className="mb-4 mt-2 h-60 overflow-y-auto scrollbar-hide sm:h-fit">{description}</p>
 
-                    <p className="border border-green-700 text-green-700 py-2 px-3 w-fit mt-2">{category.title}</p>
+                    <p className="border border-green-700 text-jasonred py-2 px-3 w-fit mt-2">{category.title}</p>
                   </div>
                 </div>
               )
@@ -122,7 +122,7 @@ const ProductsPage = ({ products }) => {
         </section>
 
         <section className="product-list container max-w-6xl my-16 space-y-8">
-          <h3 className="text-4xl font-semibold text-green-700">Spices</h3>
+          <h3 className="text-4xl font-semibold text-jasonred">Spices</h3>
 
           {products?.map(({ title, _id, category, mainImage, description }, index) => {
             const imageSrc = imgBuilder.image(mainImage).url();
@@ -138,7 +138,7 @@ const ProductsPage = ({ products }) => {
                     <h3 className="text-3xl font-semibold">{title}</h3>
                     <p className="mb-4 mt-2 h-60 overflow-y-auto scrollbar-hide sm:h-fit">{description}</p>
 
-                    <p className="border border-green-700 text-green-700 py-2 px-3 w-fit mt-2">{category.title}</p>
+                    <p className="border border-green-700 text-jasonred py-2 px-3 w-fit mt-2">{category.title}</p>
                   </div>
                 </div>
               )
@@ -147,7 +147,7 @@ const ProductsPage = ({ products }) => {
         </section>
 
         <section className="product-list container max-w-6xl my-16 space-y-8">
-          <h3 className="text-4xl font-semibold text-green-700">Coffee</h3>
+          <h3 className="text-4xl font-semibold text-jasonred">Coffee</h3>
 
           {products?.map(({ title, _id, category, mainImage, description }, index) => {
             const imageSrc = imgBuilder.image(mainImage).url();
@@ -163,7 +163,7 @@ const ProductsPage = ({ products }) => {
                     <h3 className="text-3xl font-semibold">{title}</h3>
                     <p className="mb-4 mt-2 h-60 overflow-y-auto scrollbar-hide sm:h-fit">{description}</p>
 
-                    <p className="border border-green-700 text-green-700 py-2 px-3 w-fit mt-2">{category.title}</p>
+                    <p className="border border-green-700 text-jasonred py-2 px-3 w-fit mt-2">{category.title}</p>
                   </div>
                 </div>
               )

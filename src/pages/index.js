@@ -4,8 +4,10 @@ import AboutUs from "../components/AboutUs";
 import Contact from "../components/Contact";
 import Hero from "../components/Hero";
 import Products from "../components/Products";
+import Projects from "../components/Projects";
+import Services from "../components/Services";
 
-export default function Home({ products }) {
+export default function Home() {
   return (
     <>
       <Head>
@@ -18,30 +20,11 @@ export default function Home({ products }) {
       <main>
         <Hero />
         <AboutUs />
-        <Products products={products} />
+        <Products />
+        <Projects />
+        <Services />
         <Contact />
       </main>
     </>
   );
-}
-
-export async function getServerSideProps(context) {
-  const query = encodeURIComponent('*[ _type == "product" ]');
-  const url = `${process.env.SANITY_URL}/v2021-10-21/data/query/production?query=${query}`;
-
-  const results = await fetch(url).then((res) => res.json());
-
-  if (!results.result || !results.result.length) {
-    return {
-      props: {
-        products: [],
-      },
-    };
-  } else {
-    return {
-      props: {
-        products: results.result,
-      },
-    };
-  }
 }
