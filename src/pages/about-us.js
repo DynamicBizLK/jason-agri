@@ -22,7 +22,7 @@ const AboutPage = () => {
         <section className="container max-w-6xl text-lg mt-16">
           <div className="flex gap-8 my-4">
             <p className="max-w-sm text-lg sm:max-w-full">
-              Jason Agri Exports (Pvt) Limited is a company offering services to our customers and manufactures to meet their needs in agri supply chain.
+              Jason Agri Exports (PVT) Limited is a company offering services to our customers and manufactures to meet their needs in agri supply chain.
               <br />
               It includes cultivation of vegetables, fruits, herbs, spices and similar items and dehydration of fresh products according to accepted food & hygenic standards.
               <br />
